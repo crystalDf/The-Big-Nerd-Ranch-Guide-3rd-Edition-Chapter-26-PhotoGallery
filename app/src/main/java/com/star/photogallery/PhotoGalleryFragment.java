@@ -158,7 +158,7 @@ public class PhotoGalleryFragment extends Fragment {
         public PhotoHolder(View itemView) {
             super(itemView);
 
-            mItemImageView = itemView.findViewById(R.id.fragment_photo_gallery_image_view);
+            mItemImageView = itemView.findViewById(R.id.photo_gallery_item_image_view);
         }
 
         public void bindDrawable(Drawable drawable) {
@@ -177,7 +177,7 @@ public class PhotoGalleryFragment extends Fragment {
         @Override
         public PhotoHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             LayoutInflater inflater = LayoutInflater.from(getActivity());
-            View view = inflater.inflate(R.layout.gallery_item, parent, false);
+            View view = inflater.inflate(R.layout.list_item_gallery, parent, false);
 
             return new PhotoHolder(view);
         }
