@@ -19,6 +19,9 @@ public class GalleryItem {
         mUrl = url;
     }
 
+    public String getUrl() {
+        return mUrl;
+    }
     @Override
     public String toString() {
         return mCaption;
